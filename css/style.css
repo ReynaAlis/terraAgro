@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-VariableFont.woff2') format('woff2-variations');
+    src: url('../fonts/NunitoSans-VariableFont.woff2') format('woff2') tech('variations');
+    font-weight: 300 700;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-VariableFont.woff2') format('woff2-variations');
+    src: url('../fonts/WorkSans-VariableFont.woff2') format('woff2') tech('variations');
+    font-weight: 300 600;
+}
+
+body {
+    font-size: 16px;
+    color: #0e0d0d;
+    background-color: #fdfdf0;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+}
+
+.menu__list {
+    display: flex;
+    gap: 0 30px;
+}
+
+.menu__link {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #0e0d0d;
+    text-decoration: none;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.menu__link:hover {
+    color: #b28f45;
+}
+
+.wheat-icon {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.menu__link:hover .wheat-icon {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.header__contacts {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #0e0d0d;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header__contacts::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #ffffff44, #ffffff22);
+    transition: left 0.4s ease;
+    z-index: 0;
+}
+
+.header__contacts:hover::before {
+    left: 100%;
+}
+
+.header__contacts:hover {
+    color: #b28f45;
+}
