@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-wheat" viewBox="0 0 100 30">
+        <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
+        <circle cx="20" cy="20" r="2" fill="#b28f45" />
+        <circle cx="50" cy="15" r="2" fill="#b28f45" />
+        <circle cx="80" cy="20" r="2" fill="#b28f45" />
+    </symbol>
+</svg>

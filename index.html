@@ -4,78 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Терра Агро — крупный агропроизводитель, экологичные продукты, экспорт.">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Терра Агро</title>
 </head>
 
 <body>
+  <svg style="display: none;">
+    <symbol id="icon-wheat" viewBox="0 0 100 30" fill="none" stroke="#b28f45" stroke-width="2">
+      <path d="M0 25 C 25 5, 75 5, 100 25" />
+      <circle cx="20" cy="20" r="2" fill="#b28f45" />
+      <circle cx="50" cy="15" r="2" fill="#b28f45" />
+      <circle cx="80" cy="20" r="2" fill="#b28f45" />
+    </symbol>
+  </svg>
+
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
+        <a class="logo" href="#" aria-label="Перейти на главную страницу">
           <img src="images/logo.png" alt="Логотип Терра Агро" width="172">
         </a>
-        <nav class="menu">
+        <nav class="menu" role="navigation" aria-label="Главное меню">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">О компании
-                <span class="wheat-icon">
-                  <svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
-                    <circle cx="20" cy="20" r="2" fill="#b28f45" />
-                    <circle cx="50" cy="15" r="2" fill="#b28f45" />
-                    <circle cx="80" cy="20" r="2" fill="#b28f45" />
-                  </svg>
-                </span>
+                <svg class="wheat-icon" aria-hidden="true">
+                  <use href="#icon-wheat"></use>
+                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Продукция
-                <span class="wheat-icon">
-                  <svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
-                    <circle cx="20" cy="20" r="2" fill="#b28f45" />
-                    <circle cx="50" cy="15" r="2" fill="#b28f45" />
-                    <circle cx="80" cy="20" r="2" fill="#b28f45" />
-                  </svg>
-                </span>
+                <svg class="wheat-icon" aria-hidden="true">
+                  <use href="#icon-wheat"></use>
+                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Партнеры
-                <span class="wheat-icon">
-                  <svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
-                    <circle cx="20" cy="20" r="2" fill="#b28f45" />
-                    <circle cx="50" cy="15" r="2" fill="#b28f45" />
-                    <circle cx="80" cy="20" r="2" fill="#b28f45" />
-                  </svg>
-                </span>
+                <svg class="wheat-icon" aria-hidden="true">
+                  <use href="#icon-wheat"></use>
+                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Блог
-                <span class="wheat-icon">
-                  <svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
-                    <circle cx="20" cy="20" r="2" fill="#b28f45" />
-                    <circle cx="50" cy="15" r="2" fill="#b28f45" />
-                    <circle cx="80" cy="20" r="2" fill="#b28f45" />
-                  </svg>
-                </span>
+                <svg class="wheat-icon" aria-hidden="true">
+                  <use href="#icon-wheat"></use>
+                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Контакты
-                <span class="wheat-icon">
-                  <svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 25 C 25 5, 75 5, 100 25" stroke="#b28f45" stroke-width="2" fill="none" />
-                    <circle cx="20" cy="20" r="2" fill="#b28f45" />
-                    <circle cx="50" cy="15" r="2" fill="#b28f45" />
-                    <circle cx="80" cy="20" r="2" fill="#b28f45" />
-                  </svg>
-                </span>
+                <svg class="wheat-icon" aria-hidden="true">
+                  <use href="#icon-wheat"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -85,9 +70,7 @@
       </div>
     </div>
   </header>
-
-
-
+  
   <script src="js/main.js"></script>
 </body>
 

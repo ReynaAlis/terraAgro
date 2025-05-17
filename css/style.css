@@ -102,3 +102,9 @@ body {
 .header__contacts:hover {
     color: #b28f45;
 }
+
+.logo:focus,.menu__link:focus,
+.header__contacts:focus {
+    outline: 2px dashed #b28f45;
+    outline-offset: 4px;
+}
