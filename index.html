@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Терра Агро — крупный агропроизводитель, экологичные продукты, экспорт.">
+  <meta name="description"
+    content="Терра Агро — производитель сельскохозяйственной продукции полного цикла: зерновые, масличные, молочная и мясная продукция, экологичность, экспорт в 10+ стран.">
+  <meta name="keywords"
+    content="Терра Агро, агропроизводитель, сельское хозяйство, агроэкспорт, зерновые, подсолнечник, молочная продукция, птицеводство, ферма, экологичные продукты, агрохолдинг">
+  <link rel="preload" as="image" href="images/about-bg.avif" type="image/avif">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Терра Агро</title>
@@ -24,9 +28,9 @@
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#" aria-label="Перейти на главную страницу">
-          <img src="images/logo.png" alt="Логотип Терра Агро" width="172">
+          <img src="images/logo.svg" alt="Логотип Терра Агро" width="172">
         </a>
-        <nav class="menu" role="navigation" aria-label="Главное меню">
+        <nav class="menu" aria-label="Главное меню">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">О компании
@@ -70,7 +74,166 @@
       </div>
     </div>
   </header>
-  
+
+  <main class="main">
+    <section class="about">
+      <div class="container-big">
+        <div class="about__top">
+          <h1 class="visually-hidden">Терра Агро - надёжный производитель агропродукции полного цикла
+            и экспортер в 10+ стран</h1>
+          <h2 class="about__title">Терра Агро</h2>
+          <div class="about__text-wrapper">
+            <p class="about__text">Крупнейший производитель агропродукции в России</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about__achievements">
+          <a class="about__achievement" href="#">
+            <div class="about__achievement-imgbox">
+              <picture>
+                <source srcset="images/seed.avif" type="image/avif">
+                <source srcset="images/seed.webp" type="image/webp">
+                <img class="about__achievement-img" src="images/seed.png" alt="Комбайн собирает зерно" loading="lazy">
+              </picture>
+              <span class="about__achievement-arrow" aria-label="Подробнее">
+                <img src="images/ach-arrow.svg" alt="Стрелка">
+              </span>
+            </div>
+            <div class="about__achievement-content">
+              <h3 class="about__achievement-title">Лидер в&nbsp;производстве зерновых культур</h3>
+              <p class="about__achievement-text">Мы&nbsp;обеспечиваем <span class="text--bold">стабильные урожаи</span>
+                пшеницы и&nbsp;других злаков
+                благодаря современной технике и&nbsp;высоким
+                стандартам качества</p>
+            </div>
+          </a>
+
+          <a class="about__achievement" href="#">
+            <div class="about__achievement-imgbox">
+              <picture>
+                <source srcset="images/chickens.avif" type="image/avif">
+                <source srcset="images/chickens.webp" type="image/webp">
+                <img class="about__achievement-img" src="images/chickens.png" alt="Курицы на ферме" loading="lazy">
+              </picture>
+              <span class="about__achievement-arrow" aria-label="Подробнее">
+                <img src="images/ach-arrow.svg" alt="Стрелка">
+              </span>
+            </div>
+            <div class="about__achievement-content">
+              <h3 class="about__achievement-title">Лидер в&nbsp;птицеводстве на&nbsp;рынке региона</h3>
+              <p class="about__achievement-text"><span class="text--bold">Высокое качество продукции</span> благодаря
+                автоматизированным кормовым
+                системам и ветеринарному контролю</p>
+            </div>
+          </a>
+        </div>
+        <dl class="about__stats">
+          <div class="about__stats-item">
+            <dt>100%</dt>
+            <dd>качество продукции</dd>
+          </div>
+
+          <div class="about__stats-item">
+            <dt>50+</dt>
+            <dd>инновационных решений</dd>
+          </div>
+
+          <div class="about__stats-item">
+            <dt>1,5 млн. тонн</dt>
+            <dd>продукции ежегодно</dd>
+          </div>
+
+          <div class="about__stats-item">
+            <dt>10+</dt>
+            <dd>стран для экспорта</dd>
+          </div>
+
+        </dl>
+
+        <p class="about__progress-text">
+          <span class="text--bold">Терра Агро&nbsp;&mdash; крупнейший вертикально интегрированный
+            производитель сельхозпродукции</span> в&nbsp;России.
+          Компания уверенно занимает ведущие позиции в&nbsp;выращивании зерновых и&nbsp;технических культур,
+          а&nbsp;также
+          в&nbsp;животноводстве.
+        </p>
+
+        <div class="about__progress-box">
+          <picture>
+            <source srcset="images/wheat_ear.avif" type="image/avif">
+            <source srcset="images/wheat_ear.webp" type="image/webp">
+            <img class="about__progress-img" src="images/wheat_ear.jpg" alt="Пшеничный колос" loading="lazy">
+          </picture>
+          <div class="about__progress-tablebox">
+            <p class="about__progress-boxtext">Терра Агро&nbsp;&mdash; <span class="text--color">более
+                30&nbsp;лет</span> лидерства в&nbsp;сельскохозяйственной отрасли.
+              Мы&nbsp;обрабатываем <span class="text--color">более 200&nbsp;000 гектаров земли</span>, поставляем
+              продукцию высокого качества
+              и&nbsp;экспортируем
+              <span class="text--color">в&nbsp;10+&nbsp;стран мира</span>.
+              <span class="text--bold">Наша миссия&nbsp;&mdash;</span> развивать агросектор, внедрять инновации
+              и&nbsp;обеспечивать людей натуральными
+              продуктами.
+            </p>
+
+            <ul class="about__progress-table">
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;1</span>
+                  <span class="text--bold">по&nbsp;выращиванию&nbsp;подсолнечника&nbsp;в&nbsp;регионе</span>
+                </div>
+                <div class="about__progress-description">48&nbsp;000&nbsp;га посевных площадей</div>
+              </li>
+
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;3</span>
+                  <span class="text--bold">в&nbsp;производстве&nbsp;пшеницы</span>
+                </div>
+                <div class="about__progress-description">50&nbsp;000&nbsp;га под зерновыми</div>
+              </li>
+
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;1</span>
+                  <span class="text--bold">по&nbsp;ёмкости&nbsp;элеваторов&nbsp;в&nbsp;округе</span>
+                </div>
+                <div class="about__progress-description">235&nbsp;000 тонн хранения</div>
+              </li>
+
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;1</span>
+                  <span class="text--bold">в&nbsp;птицеводстве&nbsp;среди&nbsp;частных&nbsp;предприятий</span>
+                </div>
+                <div class="about__progress-description">4&nbsp;000&nbsp;000 голов птицы</div>
+              </li>
+
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;4</span>
+                  <span class="text--bold">в&nbsp;молочном&nbsp;животноводстве</span>
+                </div>
+                <div class="about__progress-description">4&nbsp;500 дойных коров</div>
+              </li>
+
+              <li class="about__progress-item">
+                <div class="about__progress-heading">
+                  <span class="text--color">№&nbsp;2</span>
+                  <span class="text--bold">по&nbsp;выпуску&nbsp;хлебобулочных&nbsp;изделий</span>
+                </div>
+                <div class="about__progress-description">7&nbsp;000 тонн продукции в&nbsp;год</div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
   <script src="js/main.js"></script>
 </body>
 
