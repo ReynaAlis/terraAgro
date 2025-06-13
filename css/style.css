@@ -98,27 +98,10 @@ body {
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.header__contacts::before {
-    content: '';
-    position: absolute;
-    left: -100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, #ffffff44, #ffffff22);
-    transition: left 0.4s ease;
-    z-index: 0;
-}
-
-.header__contacts:hover::before {
-    left: 100%;
 }
 
 .header__contacts:hover {
-    color: #b28f45;
+    box-shadow: inset 0 0 0 2px #f2a531;
 }
 
 .logo:focus, .menu__link:focus,
@@ -314,4 +297,109 @@ body {
 
 .about__progress-item dd {
     opacity: .71;
+}
+
+.products__wrapper {
+    padding: 50px 0;
+    background-color: #f4f4e7;
+    border-radius: 20px;
+}
+
+.products__title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 35px;
+}
+
+.products__item {
+    border-radius: 10px;
+    min-height: 322px;
+    margin-bottom: 12px;
+    padding: 50px 24px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease
+}
+
+.products__item:hover {
+    box-shadow: 0 0 0 2px #f2a531 inset;
+}
+
+.products__item-btn {
+    position: absolute;
+    bottom: -12px;
+    left: -8px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.products__item-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.products__item-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+.products__item:nth-child(odd) {
+    color: #fff;
+}
+
+.products__item-title,
+.products__item-text {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.products__item:hover .products__item-title {
+    color: #f2a531;
+}
+
+.products__item:hover .products__item-text {
+    opacity: 0.8;
+}
+
+.products__link {
+    display: block;
+    width: 242px;
+    margin: 0 auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border-radius: 96px;
+    padding: 19px 97px 19px 38px;
+    position: relative;
+}
+
+.products__link {
+    transition: box-shadow 0.3s ease;
+}
+
+.products__link:hover {
+    box-shadow: inset 0 0 0 2px #f2a531;
+}
+
+.products__link svg {
+    position: absolute;
+    top: 3px;
+    right: 4px;
 }
